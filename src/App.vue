@@ -1,39 +1,65 @@
 <template>
   <div id="app">
-    <!-- <Top></Top>  -->
-    
-    <div>
-
-    </div>
-    <!-- <Botton></Botton> -->
+    <Top></Top> 
+    <Index></Index>
+    <Bottom></Bottom>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
 import Top from './components/top'
-// import Bottom from './components/bottom'
+import Bottom from './components/bottom'
+import Index from './components/index'
 
 export default {
   name: 'App',
   components: {
     Top,
     HelloWorld,
+    Bottom,
+    Index
   }
 }
 </script>
 
 <style>
-body,div,ol,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,input,img,span {
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+}
+
+html,body,div,ol,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,input,img,span {
 	margin:0;
 	padding:0;
 }
 
 #app {
-	overflow-x: hidden;
-	overflow-y: hidden;
-	background-image: url("/static/background.png");
-	background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: url("/static/background.png") no-repeat ;
+  background-size: cover;
+}
+
+#app > div:first-child {
+  height: 6rem;
+  background-color: rgba(255,255,255,0.8);
+}
+
+#app > div:nth-child(2) {
+  flex: auto;
+}
+
+#app > div:nth-child(3) {
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(74,74,74,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hide {
