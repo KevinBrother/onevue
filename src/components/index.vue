@@ -1,38 +1,16 @@
 <template>
     <div id="content">
-        <!-- <div class="main">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="/static/index1.jpg">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/static/index2.jpg">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="/static/index3.jpg">
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
+        <div class="main">
+            <img src="/static/img/index1.jpg">
         </div>
-        <div class="nav">
+        <div class="nav flex-center">
             <div class="index-nav" onclick="location.href='/new/freshIdCard.html'">
-                <img src="/static/icon_Check in.png">
+                <img src="/static/img/icon_Check in.png">
                 <div>入住</div>
             </div>
-            <div class="index-nav" onclick="location.href='/new/checkout.html'">
-                <img src="/static/icon_Bill.png">
-                <div>结账/退卡</div>
-            </div>
-        </div> -->
-        <router-link to="/toCheckin">
-            入住asdfas
-            dadsfasd
-        </router-link>
+        </div>
     </div>
 </template>
-
 <script>
         
 export default {
@@ -46,6 +24,25 @@ export default {
 
 <style>
     #content {
-        background-color: red;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main {
+        flex: auto;
+        height: 100px;
+        display: flex;
+        justify-content: center; 
+        position: relative;
+    }
+
+    .main img {
+        position: absolute;
+        width: 96%;
+        height: 100%;
+    }
+
+    .nav {
+        height: 20.5rem;
     }
 </style>

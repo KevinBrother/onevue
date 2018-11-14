@@ -1,29 +1,26 @@
 <template>
-  <div id="app">
+  <div id="app" class="hide">
     <Top></Top> 
-    <Index></Index>
+    <router-view/>
     <Bottom></Bottom>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
 import Top from './components/top'
 import Bottom from './components/bottom'
-import Index from './components/index'
 
 export default {
   name: 'App',
   components: {
     Top,
-    HelloWorld,
-    Bottom,
-    Index
+    Bottom
   }
 }
 </script>
 
 <style>
+
 html, body {
   width: 100%;
   height: 100%;
@@ -40,7 +37,7 @@ html,body,div,ol,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,input,i
   height: 100%;
   display: flex;
   flex-direction: column;
-  background: url("/static/background.png") no-repeat ;
+  background: url("/static/img/background.png") no-repeat ;
   background-size: cover;
 }
 
