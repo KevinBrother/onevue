@@ -3,7 +3,8 @@ import Router from "vue-router"
 
 // 导入组件，并在路由器中注册
 import index from '@/components/index'
-// import toCheckin from '@/components/toCheckin'
+import toCheckin from '@/components/toCheckin'
+import freshIdCard from '@/components/freshIdCard'
 
 Vue.use(Router)
 
@@ -17,12 +18,17 @@ export default new Router({
         {
             path: '/toCheckin',
             name: 'toCheckin',
-            component: require('@/components/toCheckin')
+            component: toCheckin
+        },
+        {
+            path: '/freshIdCard',
+            name: 'freshIdCard',
+            component: freshIdCard
         },
         // {
-        //     path: '/toCheckin',
-        //     name: 'toCheckin',
-        //     component: toCheckin
+        //     path: '/freshIdCard',
+        //     name: 'freshIdCard',
+        //     component: require('@/components/freshIdCard')
         // },
     ]
 })
