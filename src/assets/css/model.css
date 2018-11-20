@@ -1,0 +1,138 @@
+.modal, .tip-modal {
+	border: 2px
+	 solid #EEEEEE;
+	border-radius: 2px;
+}
+
+.modal {
+	background: rgba(255,255,255,0.8);
+}
+
+.tip-modal {
+	z-index: 1001;
+	background: rgba(255,255,255,1);
+}
+
+.modal .modal-header, .tip-modal .modal-header {
+	width: 506px;
+	height: 74px;
+	background-color: #8075FF;
+}
+
+.modal .modal-back {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 74px;
+}
+
+.modal .modal-back > div {
+	position: absolute;
+	top: 28px;
+	left: 25px;
+	width: 13px;
+	height: 13px;
+	border: solid #FFFFFF;
+	border-width: 3px 3px 0 0;
+	transform: rotate(-135deg);
+}
+
+.modal .modal-title {
+	position: relative;
+	left: 50px;
+	top: -53px;;
+	font-family: SourceHanSansCN-Medium;
+	font-size: 22px;
+	color: #FFFFFF;
+}
+
+.modal .modal-title-tip {
+	position: relative;
+	left: 172px;
+	top: -77px;
+	font-family: SourceHanSansCN-Medium;
+	font-size: 14px;
+	color: #ECECEC;
+}
+
+.tip-modal .modal-title {
+	position: relative;
+	top: 24px;
+	left: 20px;
+	font-family: SourceHanSansCN-Bold;
+	font-size: 22px;
+	color: #FFFFFF;
+}
+
+.modal .modal-content {
+	height: 320px;
+	font-family: SourceHanSansCN-Regular;
+	font-size: 18px;
+	color: #000000;
+}
+
+.list-table {
+	margin-left: 6px;
+	margin-top: 7px;
+	text-align: center;
+	vertical-align: middle;
+	background: #FFFFFF;
+	border-collapse: collapse;
+	box-shadow: 0 2px 9px 0 rgba(208,202,202,0.50);
+}
+
+.list-table, .list-table th, .list-table td {
+	padding: 0;
+	border: 1px solid #EEEEEE;
+}
+
+.current-tablebar {
+	color: #FFFFFF !important;
+	background: #7B70FF !important;
+	border-radius: 2px !important;
+}
+
+.list-tablebar {
+	margin-top: 9px;
+	margin-left: 5px;
+	width: 1004px;
+	height: 50px;
+	font-family: MicrosoftYaHei;
+	font-size: 18px;
+	color: #000000;
+	text-align: center;
+}
+
+.list-tablebar ul {
+	list-style: none;
+}
+
+.list-tablebar ul li {
+	box-sizing: border-box;
+	height: 50px;
+	padding-top: 13px;
+	float: left;
+	background: #FFFFFF;
+	border-radius: 2px;
+	border: 1px solid #EEEEEE;
+}
+
+.column-left {
+	float: left;
+}
+
+.column-right {
+	float: right;
+}
+
+.mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 1024px;
+	height: 768px;
+	opacity: 0.5;
+	background: #000000;
+}

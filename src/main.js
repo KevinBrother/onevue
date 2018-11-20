@@ -4,9 +4,11 @@ import Vue from 'vue'
 import App from './App'
 
 import '@/assets/css/base.css'
-
 import router from './router/router'
+import myUtil from './utils/myUtil'
 
+//将 myUtils 挂载到 vue 的原型上
+Vue.prototype.myUtil = myUtil
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
