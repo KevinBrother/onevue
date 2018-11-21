@@ -10,7 +10,16 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      // 把所有的接口，统一规范为一个入口
+      '/api/**': {
+        target: 'http://localhost:8080',
+        pathRewrite: {
+          // 去http请求额外生成的无效api
+          '^/api': '/'
+        }
+      }  
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

@@ -3,7 +3,7 @@
         <div class="top-left"><img src="/static/img/logo.png"/></div>
         <div class="top-right">
             <div class="date">
-                <span>{{date}}2018.11.13 16:52:14 星期二 </span>
+                <span>{{date}}</span>
 			</div>
 			<router-link  class="back-to-index" to="/">
 				<img src="/static/img/index.png"/>
@@ -16,8 +16,7 @@
 <script>
 export default {
 	mounted() {
-		console.log(this)
-		this.getNowFormatDate();
+		setInterval(this.getNowFormatDate,"1000");
 	},
 	name: 'top',
 		data () {
@@ -34,8 +33,6 @@ export default {
 		},
 
 		getNowFormatDate() {
-			console.log("------------------")
-			console.log(this)
 			var date = new Date();
 			
 			var hous = this.addZero(date.getHours());
@@ -63,7 +60,7 @@ export default {
 				s.push("十" + cn[MM % 10]); 
 			}
 			
-			MM = addZero(MM);
+			MM = this.addZero(MM);
 			s.push("月");
 
 			var DD = date.getDate(); 
@@ -75,7 +72,7 @@ export default {
 				s.push("二十" + cn[DD% 10]); 
 			}
 			
-			DD = addZero(DD);
+			DD = this.addZero(DD);
 			s.push("日"); 
 			
 			var dateStr = YY+"-"+MM+"-"+DD;
