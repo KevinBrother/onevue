@@ -136,3 +136,41 @@
 	opacity: 0.5;
 	background: #000000;
 }
+
+.photo-modal {
+	width: 502px;
+	height: 330px;
+	top: 229px;
+}
+
+.photo-modal .modal-header {
+	width: 502px;
+}
+
+.photo-modal .modal-content {
+	padding-left: 16px !important;
+	padding-right: 16px !important;
+	padding-top: 10px !important;
+}
+
+.photo-modal .modal-content .column-left, .photo-modal .modal-content .column-right {
+	width: 230px;
+	height: 242px;
+	background-color: rgba(255,255,255,1);
+}
+
+.photo-modal .modal-content .photo-tip {
+	text-align: center;
+	margin-top: 21px;
+	font-family: SourceHanSansCN-Medium;
+	font-size: 14px;
+	color: #9B9B9B;
+}
+
+.photo-modal .modal-content .photo {
+	position: relative;
+	top: -10px;
+	left: 0;
+	width: 500px;
+	height: 500px;
+}

@@ -87,9 +87,9 @@ export default {
                
                 this.$cookies.set({"idCard": JSON.stringify(res.result.idCard)}, {path: "/"});
                 console.log(this.$cookies.keys()); 
+
                 // this.$cookies.set("name", name, {path: "/"});
-                
-                // location.href = "/new/headFace.html";        
+                // this.$router.replace({name:'headFace'})       
             })
         }
     }

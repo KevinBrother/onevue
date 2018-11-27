@@ -5,6 +5,7 @@ import Router from "vue-router"
 import index from '@/components/index'
 import toCheckin from '@/components/toCheckin'
 import freshIdCard from '@/components/freshIdCard'
+import headFace from '@/components/headFace'
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export default new Router({
             path: '/freshIdCard',
             name: 'freshIdCard',
             component: freshIdCard
+        },
+        {
+            path: '/headFace',
+            name: 'headFace',
+            component: headFace
         },
         // {
         //     path: '/freshIdCard',
