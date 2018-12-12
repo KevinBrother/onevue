@@ -6,6 +6,7 @@ import index from '@/components/index'
 import toCheckin from '@/components/toCheckin'
 import freshIdCard from '@/components/freshIdCard'
 import headFace from '@/components/headFace'
+import tower from '@/components/tower'
 
 Vue.use(Router)
 
@@ -30,6 +31,11 @@ export default new Router({
             path: '/headFace',
             name: 'headFace',
             component: headFace
+        },
+        {
+            path: '/tower',
+            name: 'tower',
+            component: tower
         },
         // {
         //     path: '/freshIdCard',

@@ -13,16 +13,27 @@ module.exports = {
     proxyTable: {
       // 把所有的接口，统一规范为一个入口
       '/api/**': {
-        target: 'http://localhost:8080',
+        target: 'http://180.153.49.216:9000',
+        changeOrigin: true,
         pathRewrite: {
           // 去http请求额外生成的无效api
           '^/api': '/'
         }
       }  
     },
+   /*  proxyTable: {
+      // 把所有的接口，统一规范为一个入口
+      '/api/**': {
+        target: 'http://localhost:8080',
+        pathRewrite: {
+          // 去http请求额外生成的无效api
+          '^/api': '/'
+        }
+      }  
+    }, */
 
     // Various Dev Server settings
-    host: 'localhost', // can be overwritten by process.env.HOST
+    host: 't.95mst.com', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
