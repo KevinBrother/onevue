@@ -13,7 +13,7 @@ module.exports = {
     proxyTable: {
       // 把所有的接口，统一规范为一个入口
       '/api/**': {
-        target: 'http://180.153.49.216:9000',
+        target: 'http://121.43.172.42:8080',
         changeOrigin: true,
         pathRewrite: {
           // 去http请求额外生成的无效api
